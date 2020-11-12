@@ -13,7 +13,7 @@ In the index function in application.py, you can see an if for request.method ==
 
 Hopefully that makes sense!!
 
-**To download yhack.zip**
+**To download yhack.zip** _Not needed anymore since the folder yhack is available_
 1) Click on the top green button which says *Code*
 2) Click on *download as zip*
 3) Extract the folder, extract *yhack* within the folder
