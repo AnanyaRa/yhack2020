@@ -39,3 +39,13 @@ video {
   height:240;
   width:320;
 }
+
+#galleries li
+{
+    width:150px;
+    display:inline-block;
+}
+#galleries li p
+{
+    margin:10px 0 20px 0;
+}
