@@ -19,8 +19,8 @@ Hopefully that makes sense!!
 3) Extract the folder, extract *yhack* within the folder
 
 **If running it in anaconda prompt in Windows 10:**
-1) run `pip install flask_session` (only the first time you run this program)
-2) Navigate to yhack folder using `cd Desktop/FIGHTS/YHack/yhack2020-main/yhack` , this will vary for you depending on where the yhack folder is located.
+1) Navigate to yhack folder using `cd Desktop/FIGHTS/YHack/yhack2020-main/yhack` , this will vary for you depending on where the yhack folder is located.
+2) run `pip install flask_session`
 3) run `set FLASK_APP=application.py`
 4) run `flask run`
 
