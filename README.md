@@ -21,4 +21,5 @@ Tanya running:
 5) run `flask run`
 
 Terminal displays warning-
-WARNING: This is a development server. Do not use it in a production deployment.
+
+`WARNING: This is a development server. Do not use it in a production deployment.`
