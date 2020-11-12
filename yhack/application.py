@@ -75,12 +75,26 @@ def question1():
     else:
         return render_template("question1.html")
 
+@app.route("/reco1")
+# @login_required
+def reco1():
+    """reco1"""
+
+    return render_template("reco1.html")
+
 @app.route("/question2")
 # @login_required
 def question2():
     """q2"""
 
     return render_template("question2.html")
+
+@app.route("/reco2")
+# @login_required
+def reco2():
+    """reco2"""
+
+    return render_template("reco2.html")
 
 @app.route("/question3", methods=["GET", "POST"])
 # @login_required
@@ -89,6 +103,12 @@ def question3():
 
     return render_template("question3.html")
 
+@app.route("/reco3")
+# @login_required
+def reco3():
+    """reco3"""
+
+    return render_template("reco3.html")
 
 @app.route("/question4", methods=["GET", "POST"])
 def question4():
