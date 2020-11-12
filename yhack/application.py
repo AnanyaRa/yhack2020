@@ -195,20 +195,6 @@ def reco2_food():
 
     return render_template("reco2_food.html")
 
-@app.route("/question3_food", methods=["GET", "POST"])
-# @login_required
-def question3_food():
-    """q3_food"""
-
-    return render_template("question3_food.html")
-
-@app.route("/reco3_food")
-# @login_required
-def reco3_food():
-    """reco3_food"""
-
-    return render_template("reco3_food.html")
-
 
 
 def errorhandler(e):

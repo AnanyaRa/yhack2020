@@ -51,6 +51,7 @@
                 <!--<hr>-->
 
             </div><br>
+            <h4>You are on Island Home</h4>
 
             <main class="container p-5">
             <!--{% block main %}{% endblock %}-->
@@ -61,11 +62,26 @@
             Energy saving can be started with heating, which is one of our most important needs. With insulation and double glass applications, a lot of energy is saved annually. Saving on the
             use of electrical equipment is also very important in terms of reducing energy and thus reducing carbon emissions.
 
+            <h4>Check out the other islands. You have 100$</h4>
 
+                <ul id="galleries">
+                  <li>
+                      <img src="https://www.italiarail.com/sites/default/files/inline-images/ferry_0.jpg"  class="border" width="200" height="200" border="0" title="Transport" /></a>
+                      <p>2. TRANSPORT</p>
+                  </li>
+                  <li>
+                      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/various-fruits-in-basket-on-picnic-blanket-at-shore-royalty-free-image-1085308952-1550769527.jpg?crop=0.756xw:1.00xh;0.137xw,0&resize=640:*"  class="border" width="200" height="200" border="0" title="Food" /></a>
+                      <p>3. FOOD</p>
+                  </li>
+              </ul>
 
-                <form action="/reco3_home" method="post">
-                    <button class="btn btn-primary" type="submit">Next Question</button>
-                </form>
+              <form action="/reco3_home" method="post">
+                  <div class="form-group">
+                      <input autocomplete="off" autofocus class="form-control" name="islands" placeholder="Enter answer" type="text">
+                  </div>
+                  <button class="btn btn-primary" type="submit">ALOHA!</button>
+              </form>
+
 
 
 

@@ -45,48 +45,84 @@
 
             <div class="section">
                 <h2>Welcome to One Earth!</h2>
-
                 <hr>
 
                 <!--<h6>Welcome to the climate change simulator</h6>-->
                 <!--<hr>-->
 
             </div><br>
-            <h4>You are on Island Transport</h4>
-
+            <h4>You are on Island Food</h4>
             <main class="container p-5">
             <!--{% block main %}{% endblock %}-->
-            <h2>Question 3</h2>
-                Which public transport will you use this week?
-                <ul id="galleries">
-                  <li>
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/LT_471_%28LTZ_1471%29_Arriva_London_New_Routemaster_%2819522859218%29.jpg/1200px-LT_471_%28LTZ_1471%29_Arriva_London_New_Routemaster_%2819522859218%29.jpg"  class="border" width="200" height="200" border="0" title="Bus" /></a>
-                      <p>1. Bus ($5)</p>
-                  </li>
-                  <li>
-                      <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/7/6/w600X390/Railways2.jpg"  class="border" width="200" height="200" border="0" title="Railway" /></a>
-                      <p>2. Railway ($15)</p>
-                  </li>
-                  <li>
-                      <img src="https://cdn.britannica.com/16/123116-004-A77D4960/Light-rail-Changchun-transit-Jilin-China.jpg"  class="border"width="200" height="200" border="0" title="Light Rail" /></a>
-                      <p>3. Light rail system ($20)</p>
-                  </li>
-                  <li>
-                      <img src="https://d1c4d7gnm6as1q.cloudfront.net/Pictures/480xany/6/0/5/29605_usnewyorksubwaylineatrainjosephcalisi_38352.jpg"  class="border" width="200" height="200" border="0" title="Subway" /></a>
-                      <p>4. Subway ($10)</p>
-                  </li>
-                  <li>
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/401_Gridlock.jpg/300px-401_Gridlock.jpg"  class="border" width="200" height="200" border="0" title="Own" /></a>
-                      <p>5. Your own ($40)</p>
-                  </li>
-                </ul>
+            <h2>Our Recommendation for Question 1</h2>
+            Our recommendation - Mean greenhouse gas emissions for different food types
 
-                <form action="/question3_trans" method="post">
-                    <div class="form-group">
-                        <input autocomplete="off" autofocus class="form-control" name="q6" placeholder="Enter answer" type="text">
-                    </div>
+            <table style="width:60%">
+              <tr>
+                <th>Food Types	</th>
+                <th>Greenhouse Gas Emissions (g CO2-Ceq per g protein)</th>
+              </tr>
+              <tr>
+                <td>Ruminant Meat</td>
+                <td>62</td>
+              </tr>
+              <tr>
+                <td>Recirculating Aquaculture	</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Trawling Fishery</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>Non-recirculating Aquaculture</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Pork</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Poultry	</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Dairy	</td>
+                <td>9.1</td>
+              </tr>
+              <tr>
+                <td>Non-trawling Fishery	</td>
+                <td>8.6</td>
+              </tr>
+              <tr>
+                <td>Eggs</td>
+                <td>6.8</td>
+              </tr>
+              <tr>
+                <td>Starchy Roots	</td>
+                <td>1.7</td>
+              </tr>
+              <tr>
+                <td>Wheat</td>
+                <td>1.2</td>
+              </tr>
+              <tr>
+                <td>Maize</td>
+                <td>1.2</td>
+              </tr>
+              <tr>
+                <td>Legumes</td>
+                <td>0.25</td>
+              </tr>
+            </table>
+            At a global scale, the FAO has recently estimated that livestock (including poultry) accounts for about 14.5 percent of anthropogenic greenhouse gas emissions estimated as 100-year CO2 equivalents.
+
+
+                <form action="/reco1_food" method="post">
                     <button class="btn btn-primary" type="submit">Next Question</button>
                 </form>
+
+
 
             </main>
             <!--<div class="dropdown">-->
