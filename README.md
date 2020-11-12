@@ -15,9 +15,9 @@ Hopefully that makes sense!!
 
 Tanya running:
 1) Running it in anaconda prompt in Windows 10
-2) run "pip install flask_session" 
+2) run `pip install flask_session`
 3) Navigate to yhack folder using cd Desktop/FIGHTS/YHack/yhack2020-main/yhack
-4) run "set FLASK_APP=application.py"
-5) flask run
+4) run `set FLASK_APP=application.py`
+5) run `flask run`
 Terminal displays warning-
 WARNING: This is a development server. Do not use it in a production deployment.
