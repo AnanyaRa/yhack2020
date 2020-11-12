@@ -87,14 +87,14 @@ def question2():
 def question3():
     """q3"""
 
-    return apology("TODO")
+    return render_template("question3.html")
 
 
 @app.route("/question4", methods=["GET", "POST"])
 def question4():
     """question4"""
 
-    return apology("TODO")
+    return render_template("question4.html")
 
 
 @app.route("/question5", methods=["GET", "POST"])
@@ -102,7 +102,7 @@ def question4():
 def question5():
     """q5"""
 
-    return apology("TODO")
+    return render_template("question5.html")
 
 
 def errorhandler(e):
