@@ -24,6 +24,6 @@ Hopefully that makes sense!!
 3) run `set FLASK_APP=application.py`
 4) run `flask run`
 
-Terminal displays warning-
+Terminal displays warning, but the program will still work-
 
 `WARNING: This is a development server. Do not use it in a production deployment.`
