@@ -1,0 +1,41 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  /*padding: 5px;*/
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+ text-align:center
+}
+
+*{
+  font-family:"Palatino";
+  background-color:lightblue;
+}
+
+p {
+  border:0.1rem solid;
+  border-color:darkblue;
+}
+
+img,video {
+  margin: 1em;
+  margin: -2px;
+}
+
+#correctness_FR,#correctness {
+  border:none;
+}
+
+video {
+  height:240;
+  width:320;
+}
