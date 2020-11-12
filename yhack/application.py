@@ -92,7 +92,7 @@ def question3():
 
 @app.route("/question4", methods=["GET", "POST"])
 def question4():
-    """question4"""
+    """question"""
 
     return render_template("question4.html")
 
@@ -103,6 +103,36 @@ def question5():
     """q5"""
 
     return render_template("question5.html")
+
+@app.route("/question6", methods=["GET", "POST"])
+def question6():
+    """question6"""
+
+    return render_template("question6.html")
+
+@app.route("/question7", methods=["GET", "POST"])
+def question7():
+    """question7"""
+
+    return render_template("question7.html")
+
+@app.route("/question8", methods=["GET", "POST"])
+def question8():
+    """question8"""
+
+    return render_template("question8.html")
+
+@app.route("/question9", methods=["GET", "POST"])
+def question9():
+    """question9"""
+
+    return render_template("question9.html")
+
+@app.route("/question10", methods=["GET", "POST"])
+def question10():
+    """question10"""
+
+    return render_template("question10.html")
 
 
 def errorhandler(e):
