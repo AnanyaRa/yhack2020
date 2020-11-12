@@ -13,9 +13,14 @@ In the index function in application.py, you can see an if for request.method ==
 
 Hopefully that makes sense!!
 
-If running it in anaconda prompt in Windows 10
+To download yhack.zip
+1) Click on the top green button which says *Code*
+2) Click on *download as zip*
+3) Extract the folder, extract *yhack* within the folder
+
+If running it in anaconda prompt in Windows 10:
 1) run `pip install flask_session`
-2) Navigate to yhack folder using cd Desktop/FIGHTS/YHack/yhack2020-main/yhack
+2) Navigate to yhack folder using `cd Desktop/FIGHTS/YHack/yhack2020-main/yhack` , this will vary for you depending on where the yhack folder is located.
 3) run `set FLASK_APP=application.py`
 4) run `flask run`
 
