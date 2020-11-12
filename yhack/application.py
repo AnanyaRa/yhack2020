@@ -58,57 +58,64 @@ def index1():
         if not request.form.get("username"):
             return apology("please enter a username",400)
 
-        return render_template("question1.html")
+        return render_template("question1_home.html")
 
     else:
         return render_template("index.html")
 
-
-@app.route("/question1", methods=["GET", "POST"])
+@app.route("/islands")
 # @login_required
-def question1():
+def islands():
+    """islands"""
+
+    return render_template("islands.html")
+
+
+@app.route("/question1_home", methods=["GET", "POST"])
+# @login_required
+def question1_home():
     """first question"""
 
     if request.method=="POST":
         return apology("TODO")
 
     else:
-        return render_template("question1.html")
+        return render_template("question1_home.html")
 
-@app.route("/reco1")
+@app.route("/reco1_home")
 # @login_required
-def reco1():
-    """reco1"""
+def reco1_home():
+    """reco1_home"""
 
-    return render_template("reco1.html")
+    return render_template("reco1_home.html")
 
-@app.route("/question2")
+@app.route("/question2_home")
 # @login_required
 def question2():
-    """q2"""
+    """q2_home"""
 
-    return render_template("question2.html")
+    return render_template("question2_home.html")
 
-@app.route("/reco2")
+@app.route("/reco2_home")
 # @login_required
 def reco2():
-    """reco2"""
+    """reco2_home"""
 
-    return render_template("reco2.html")
+    return render_template("reco2_home.html")
 
-@app.route("/question3", methods=["GET", "POST"])
+@app.route("/question3_home", methods=["GET", "POST"])
 # @login_required
-def question3():
+def question3_home():
     """q3"""
 
-    return render_template("question3.html")
+    return render_template("question3_home.html")
 
-@app.route("/reco3")
+@app.route("/reco3_home")
 # @login_required
 def reco3():
-    """reco3"""
+    """reco3_home"""
 
-    return render_template("reco3.html")
+    return render_template("reco3_home.html")
 
 @app.route("/question4", methods=["GET", "POST"])
 def question4():

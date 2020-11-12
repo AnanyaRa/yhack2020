@@ -54,16 +54,34 @@
 
             <main class="container p-5">
             <!--{% block main %}{% endblock %}-->
-            <h2>Our Recommendation for Question 3</h2>
+            <h2>Question 1</h2>
+                What type of housing do you prefer?
 
-            Our recommendation - Fuels such as natural gas and coal used for home heating are also one of the direct causes of carbon emission. However, natural gas emits much less than coal.
-            Energy saving can be started with heating, which is one of our most important needs. With insulation and double glass applications, a lot of energy is saved annually. Saving on the
-            use of electrical equipment is also very important in terms of reducing energy and thus reducing carbon emissions.
+                <ul id="galleries">
+                  <li>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Nordisches_Einfamilienhaus.jpg"  class="border" width="200" height="200" border="0" title="Freestanding" /></a>
+                      <p>1. Freestanding (10$)</p>
+                  </li>
+                  <li>
+                      <img src="https://thumbs.dreamstime.com/b/tall-modern-multistory-house-under-blue-sky-36089112.jpg"  class="border" width="200" height="200" border="0" title="Multistory apartment" /></a>
+                      <p>2. Multistorey apt (20$)</p>
+                  </li>
+                  <li>
+                      <img src="https://www.achahomes.com/wp-content/uploads/2020/01/Contemporary-style-elevation-ideas.jpg"  class="border" width="200" height="200" border="0" title="Duplex" /></a>
+                      <p>3. Duplex (30$)</p>
+                  </li>
+                  <li>
+                      <img src="https://www.99.co/blog/singapore/wp-content/uploads/2019/06/resale-condo-cheap-e1560147003362.jpg"  class="border" width="200" height="200" border="0" title="Luxury Condo" /></a>
+                      <p>4. Luxury Condo (40$)</p>
+                  </li>
+              </ul>
 
 
-
-                <form action="/reco2" method="post">
-                    <button class="btn btn-primary" type="submit">Next Question</button>
+                <form action="/question1_home" method="post">
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="q1" placeholder="Enter answer" type="text">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Next</button>
                 </form>
 
 
