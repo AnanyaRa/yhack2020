@@ -44,7 +44,7 @@
             </nav>
 
             <div class="section">
-                <h2>Welcome to the climate change simulator</h2>
+                <h2>Welcome to One Earth!</h2>
                 <hr>
 
                 <!--<h6>Welcome to the climate change simulator</h6>-->
@@ -54,37 +54,96 @@
 
             <main class="container p-5">
             <!--{% block main %}{% endblock %}-->
-            <h2>Question 5</h2>
-                Please select your default mode of transport.
+            <h2>Question 4</h2>
+                How do you want to stock your fridge for the next week?
 
                 <ul id="galleries">
                   <li>
-                      <img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2017/01/Nissan-Leaf.jpeg"  class="border" width="150" height="150" border="0" title="Electric Car" /></a>
-                      <p>1. Electric Car</p>
+                      <img src="https://media4.s-nbcnews.com/j/newscms/2019_40/3038966/191004-red-meat-grocery-store-2007-ac-919p_514940e7fa4de1fedf43f727b77312e3.fit-760w.jpg"  class="border" width="150" height="150" border="0" title="Daily Meat" /></a>
+                      <p>1. Daily Meat</p>
                   </li>
                   <li>
-                      <img src="https://img.etimg.com/thumb/msid-73268134,width-640,resizemode-4,imgsize-35417/surprise-heard-of-a-sony-car.jpg"  class="border" width="150" height="150" border="0" title="Car" /></a>
-                      <p>2. Car</p>
+                      <img src="https://s23209.pcdn.co/wp-content/uploads/2016/12/Sheet-Pan-Steak-and-VeggiesIMG_4081-360x360.jpg"  class="border" width="150" height="150" border="0" title="Half meat/veggies" /></a>
+                      <p>2. Mostly Meat</p>
                   </li>
                   <li>
-                      <img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5dfead704e2917000783aada%2F0x0.jpg"  class="border" width="150" height="150" border="0" title="Motorcycle" /></a>
-                      <p>3. Motorcycle</p>
+                      <img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/lemon-pepper-beef-potatoes-garlic-veggies-b0d55eeb.jpg"  class="border" width="150" height="150" border="0" title="Mostly veggies" /></a>
+                      <p>3. Mostly Veggies</p>
                   </li>
                   <li>
-                      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/09/15/00/Public-Transport-Getty.jpg?w968h681"  class="border" width="150" height="150" border="0" title="Public Transit" /></a>
-                      <p>4. Public Transit</p>
+                      <img src="https://weelicious.com/imager/weelicious_com/uploads/How-to-Make-a-Fruit-and-Vegetable-Party-Platter-1_1b74faffbe944b0675f0e20473d3ad34.jpg"  class="border" width="150" height="150" border="0" title="Vegetarian" /></a>
+                      <p>4. Vegetarian</p>
                   </li>
                   <li>
-                      <img src="https://imgix.bustle.com/elite-daily/2015/01/06034600/elite-daily-mattia-pellzari-walk.jpg?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg"  class="border" width="150" height="150" border="0" title="None/Walk" /></a>
-                      <p>5. None/Walk</p>
+                      <img src="https://www.studyfinds.org/wp-content/uploads/2020/01/AdobeStock_289529994-816x520.jpeg"  class="border" width="150" height="150" border="0" title="Vegan" /></a>
+                      <p>5. Vegan</p>
                   </li>
               </ul>
 
-              Our recommendation - Since vehicles generally consume fossil fuels, they cause direct carbon emissions. The increase in the number of vehicles per person directly affects the total footprint.
+              Our recommendation - Mean greenhouse gas emissions for different food types
+              <table style="width:60%">
+                <tr>
+                  <th>Food Types	</th>
+                  <th>Greenhouse Gas Emissions (g CO2-Ceq per g protein)</th>
+                </tr>
+                <tr>
+                  <td>Ruminant Meat</td>
+                  <td>62</td>
+                </tr>
+                <tr>
+                  <td>Recirculating Aquaculture	</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>Trawling Fishery</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>Non-recirculating Aquaculture</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>Pork</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Poultry	</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Dairy	</td>
+                  <td>9.1</td>
+                </tr>
+                <tr>
+                  <td>Non-trawling Fishery	</td>
+                  <td>8.6</td>
+                </tr>
+                <tr>
+                  <td>Eggs</td>
+                  <td>6.8</td>
+                </tr>
+                <tr>
+                  <td>Starchy Roots	</td>
+                  <td>1.7</td>
+                </tr>
+                <tr>
+                  <td>Wheat</td>
+                  <td>1.2</td>
+                </tr>
+                <tr>
+                  <td>Maize</td>
+                  <td>1.2</td>
+                </tr>
+                <tr>
+                  <td>Legumes</td>
+                  <td>0.25</td>
+                </tr>
+              </table>
+              At a global scale, the FAO has recently estimated that livestock (including poultry) accounts for about 14.5 percent of anthropogenic greenhouse gas emissions estimated as 100-year CO2 equivalents.
 
-                <form action="/question5" method="post">
+                <form action="/question4" method="post">
                     <div class="form-group">
-                        <input autocomplete="off" autofocus class="form-control" name="q5" placeholder="Enter answer" type="text">
+                        <input autocomplete="off" autofocus class="form-control" name="q4" placeholder="Enter answer" type="text">
                     </div>
                     <button class="btn btn-primary" type="submit">Next Question</button>
                 </form>

@@ -91,14 +91,14 @@ def reco1_home():
 
 @app.route("/question2_home")
 # @login_required
-def question2():
+def question2_home():
     """q2_home"""
 
     return render_template("question2_home.html")
 
 @app.route("/reco2_home")
 # @login_required
-def reco2():
+def reco2_home():
     """reco2_home"""
 
     return render_template("reco2_home.html")
@@ -112,54 +112,103 @@ def question3_home():
 
 @app.route("/reco3_home")
 # @login_required
-def reco3():
+def reco3_home():
     """reco3_home"""
 
     return render_template("reco3_home.html")
 
-@app.route("/question4", methods=["GET", "POST"])
-def question4():
-    """question"""
-
-    return render_template("question4.html")
-
-
-@app.route("/question5", methods=["GET", "POST"])
+@app.route("/question1_trans", methods=["GET", "POST"])
 # @login_required
-def question5():
-    """q5"""
+def question1_trans():
+    """first questiontrans"""
 
-    return render_template("question5.html")
+    if request.method=="POST":
+        return apology("TODO")
 
-@app.route("/question6", methods=["GET", "POST"])
-def question6():
-    """question6"""
+    else:
+        return render_template("question1_trans.html")
 
-    return render_template("question6.html")
+@app.route("/reco1_trans")
+# @login_required
+def reco1_trans():
+    """reco1_trans"""
 
-@app.route("/question7", methods=["GET", "POST"])
-def question7():
-    """question7"""
+    return render_template("reco1_trans.html")
 
-    return render_template("question7.html")
+@app.route("/question2_trans")
+# @login_required
+def question2_trans():
+    """q2_trans"""
 
-@app.route("/question8", methods=["GET", "POST"])
-def question8():
-    """question8"""
+    return render_template("question2_trans.html")
 
-    return render_template("question8.html")
+@app.route("/reco2_trans")
+# @login_required
+def reco2_trans():
+    """reco2_trans"""
 
-@app.route("/question9", methods=["GET", "POST"])
-def question9():
-    """question9"""
+    return render_template("reco2_trans.html")
 
-    return render_template("question9.html")
+@app.route("/question3_trans", methods=["GET", "POST"])
+# @login_required
+def question3_trans():
+    """q3_trans"""
 
-@app.route("/question10", methods=["GET", "POST"])
-def question10():
-    """question10"""
+    return render_template("question3_trans.html")
 
-    return render_template("question10.html")
+@app.route("/reco3_trans")
+# @login_required
+def reco3_trans():
+    """reco3_trans"""
+
+    return render_template("reco3_trans.html")
+
+@app.route("/question1_food", methods=["GET", "POST"])
+# @login_required
+def question1_food():
+    """first question_food"""
+
+    if request.method=="POST":
+        return apology("TODO")
+
+    else:
+        return render_template("question1_food.html")
+
+@app.route("/reco1_food")
+# @login_required
+def reco1_food():
+    """reco1_food"""
+
+    return render_template("reco1_food.html")
+
+@app.route("/question2_food")
+# @login_required
+def question2_food():
+    """q2_food"""
+
+    return render_template("question2_food.html")
+
+@app.route("/reco2_food")
+# @login_required
+def reco2_food():
+    """reco2_food"""
+
+    return render_template("reco2_food.html")
+
+@app.route("/question3_food", methods=["GET", "POST"])
+# @login_required
+def question3_food():
+    """q3_food"""
+
+    return render_template("question3_food.html")
+
+@app.route("/reco3_food")
+# @login_required
+def reco3_food():
+    """reco3_food"""
+
+    return render_template("reco3_food.html")
+
 
 
 def errorhandler(e):

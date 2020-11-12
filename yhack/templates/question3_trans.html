@@ -44,7 +44,7 @@
             </nav>
 
             <div class="section">
-                <h2>Welcome to One Earth!</h2>
+                <h2>Welcome to the climate change simulator</h2>
                 <hr>
 
                 <!--<h6>Welcome to the climate change simulator</h6>-->
@@ -54,18 +54,28 @@
 
             <main class="container p-5">
             <!--{% block main %}{% endblock %}-->
-            <img src="https://www.sustainablefashion.earth/wp-content/uploads/2019/06/1-5.png"  class="border" width="1000" height="500" border="0" title="OneEarth" /></a>
-            <h4>"Join our online community to design your lifestyle, connect with friends, and learn about the impact daily living can have on the environment. Please enter your username and optional referral code below."</h4>
+            <h2>Question 6</h2>
+                How will your round-trip flight numbers and distances be this week?
+                <br><img src="https://images.financialexpress.com/2020/06/airlines1.jpg"  class="border" width="300" height="300" border="0" title="Flights " /></a>
 
+                <ul id="galleries">
+                  <li>
+                      <p>1. Short-haul</p>
+                  </li>
+                  <li>
+                      <p>2. Medium-haul</p>
+                  </li>
+                  <li>
+                      <p>3. Long-haul</p>
+                  </li>
+              </ul>
 
-
-                 <form action="/index" method="post">
+              Our recommendation - Using the road, not the airline, is important to reduce the carbon footprint. Instead of traveling by plane, choosing buses or trains especially for close distances causes less greenhouse gas emissions.
+                <form action="/question6" method="post">
                     <div class="form-group">
-                        <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Enter Username" type="text">
-                        <br><input autocomplete="off" autofocus class="form-control" name="referralcode" placeholder="Enter Referral Code" type="text">
-
+                        <input autocomplete="off" autofocus class="form-control" name="q6" placeholder="Enter answer" type="text">
                     </div>
-                    <button class="btn btn-primary" type="submit">Go Island Hopping!</button>
+                    <button class="btn btn-primary" type="submit">Next Question</button>
                 </form>
 
             </main>
