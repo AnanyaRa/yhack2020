@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Climate Change Simulator</title>
+        <link rel="icon" href="smiley.jpg" type="image/icon">
+        <!--image taken from https://thedearsoandsoblog.wordpress.com/2014/07/24/dear-emoji-among-us-whatsapp-emotions-bbm-smiley-face/comment-page-1/-->
+    </head>
+    <body>
+
+        <!--<div class="jumbotron">-->
+        <!--    <h1>Climate Change Simulator</h1>-->
+        <!--</div>-->
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-md navbar-light bg-light border">
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto mt-2">
+                        <!--<li class="nav-item"><a class="nav-link" href="/game">Return to Game</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="/islands">Islands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/tutorial">Tutorial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/scoreboard">Scoreboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/credits">Credits/Cited Work</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/index">Start New Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="section">
+                <h2>Welcome to One Earth!</h2>
+                <hr>
+
+                <!--<h6>Welcome to the climate change simulator</h6>-->
+                <!--<hr>-->
+
+            </div><br>
+            <h4>You are on Island Transport</h4>
+            <h4>You have ${{ money }}</h4>
+            <main class="container p-5">
+            <!--{% block main %}{% endblock %}-->
+            <h2>Question 1</h2>
+                Please select your default mode of transport.
+
+                <ul id="galleries">
+                  <li>
+                      <img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2017/01/Nissan-Leaf.jpeg"  class="border" width="200" height="200" border="0" title="Electric Car" /></a>
+                      <p>1. Electric Car ($50)</p>
+                  </li>
+                  <li>
+                      <img src="https://img.etimg.com/thumb/msid-73268134,width-640,resizemode-4,imgsize-35417/surprise-heard-of-a-sony-car.jpg"  class="border" width="200" height="200" border="0" title="Car" /></a>
+                      <p>2. Car ($20)</p>
+                  </li>
+                  <li>
+                      <img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5dfead704e2917000783aada%2F0x0.jpg"  class="border"width="200" height="200" border="0" title="Motorcycle" /></a>
+                      <p>3. Motorcycle ($10)</p>
+                  </li>
+                  <li>
+                      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/09/15/00/Public-Transport-Getty.jpg?w968h681"  class="border" width="200" height="200" border="0" title="Public Transit" /></a>
+                      <p>4. Public Transit ($5)</p>
+                  </li>
+                  <li>
+                      <img src="https://imgix.bustle.com/elite-daily/2015/01/06034600/elite-daily-mattia-pellzari-walk.jpg?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg"  class="border" width="200" height="200" border="0" title="None/Walk" /></a>
+                      <p>5. None/Walk ($0)</p>
+                  </li>
+              </ul>
+
+                <form action="/question1_trans" method="post">
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="q5" placeholder="Enter answer" type="text">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Next Question</button>
+                </form>
+
+            </main>
+            <!--<div class="dropdown">-->
+            <!--  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+            <!--    Different Aspects of my Life-->
+            <!--  </button>-->
+
+            <!--  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+            <!--    <a class="dropdown-item" href="dogs.html">Dogs</a>-->
+            <!--    <a class="dropdown-item" href="food.html">Food</a>-->
+            <!--    <a class="dropdown-item" href="hiking.html">Hikes</a>-->
+            <!--  </div>-->
+            <!--</div>-->
+
+            <hr>
+
+
+        </div>
+        <!--hello, homepage-->
+
+        <footer class="small text-center text-muted">
+            Created by Ananya Rajagopalan, Ceyda Varlıbaş, Sri Kundur, Tanya Sandeep Gupta. YHack 2020.
+        </footer>
+
+    </body>
+</html>
