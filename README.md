@@ -1,5 +1,10 @@
 # yhack2020
 
+Project Description + Demo Video: 
+https://devpost.com/software/one-earth
+
+Below are instructions on how to navigate the repository and access the code!
+
 In the yhack zip file:
 Should contain everything to launch a basic homepage, etc. Hopefully by looking at the structure of the index/question 1 functions in applications.py, it makes sense how the rest of the questions will work.
 
